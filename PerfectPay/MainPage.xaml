@@ -29,7 +29,7 @@
                     <RowDefinition Height=".1*"/>
                     <RowDefinition Height=".9*"/>
                 </Grid.RowDefinitions>
-                
+
                 <Label Grid.ColumnSpan="3"
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center"
@@ -125,34 +125,37 @@
                    Text="Split the total"
                    TextColor="{StaticResource LightFont}"
                    VerticalOptions="Center"/>
+
+
+
+
+            <HorizontalStackLayout
+    Grid.Row="3"
+    Grid.Column="1"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+
+                <Button x:Name="btnMinus"
+            Text="-"
+            WidthRequest="70"/>
+                <Label x:Name="lblNoPersons"
+           Margin="-5, 0, -5, 0"
+           BackgroundColor="{StaticResource SectionColor}"
+           FontSize="25"
+           HeightRequest="50"
+           HorizontalOptions="Center"
+           HorizontalTextAlignment="Center"
+           Text="1"
+           TextColor="{StaticResource LightFont}"
+           VerticalOptions="Center"
+           VerticalTextAlignment="Center"
+           WidthRequest="100"/>
+                <Button x:Name="btnPlus"
+            Text="+"
+            WidthRequest="70"/>
+            </HorizontalStackLayout>
         </Grid>
 
-        <HorizontalStackLayout
-            Grid.Row="3"
-            Grid.Column="1"
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-            
-            <Button x:Name="btnMinus"
-                    Text="-"
-                    WidthRequest="70"/>
-            <Label x:Name="lblNoPersons"
-                   Margin="-5, 0, -5, 0"
-                   BackgroundColor="{StaticResource SectionColor}"
-                   FontSize="25"
-                   HeightRequest="50"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center"
-                   Text="1"
-                   TextColor="{StaticResource LightFont}"
-                   VerticalOptions="Center"
-                   VerticalTextAlignment="Center"
-                   WidthRequest="100"/>
-            <Button x:Name="btnPlus"
-                    Text="+"
-                    WidthRequest="70"/>
-        </HorizontalStackLayout>
-        
     </Grid>
-    
+
 </ContentPage>
